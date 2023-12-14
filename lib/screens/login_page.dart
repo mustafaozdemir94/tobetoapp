@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tobetoapp/main.dart';
+import 'package:tobetoapp/providers/menu_provider.dart';
+import 'package:tobetoapp/providers/users_data_provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -14,11 +16,74 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.black,
+      appBar: AppBar(
+        title: const Text("data"),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          shrinkWrap: true,
+          children: [
+            Column(
+              children: [
+                DrawerHeader(
+                  child: CircleAvatar(
+                    backgroundColor: buttonColor,
+                    radius: 50,
+                    backgroundImage: const AssetImage('assets/user6.png'),
+                  ),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: users.length,
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      title: Center(
+                        child: Text(' ${users[index].name} ${users[index].surname}'),
+                      ),
+                      subtitle: Center(child: Text(' ${users[index].grade} ${users[index].gradeId}')),
+                    );
+                  },
+                ),
+                const SizedBox(
+                  height: 10,
+                )
+              ],
+            ),
+            ListView.builder(
+              shrinkWrap: true,
+              itemCount: menuNames.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text(menuNames[index]),
+                  onTap: () {},
+                );
+              },
+            ),
+            const SizedBox(
+              height: 150,
+            ),
+            Row(
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(image: AssetImage('assets/ic_tobeto.png'), fit: BoxFit.cover),
+                  ),
+                ),
+                const Text("Tobeto 2023"),
+              ],
+            )
+          ],
+        ),
+      ),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
             image: NetworkImage('https://i.ibb.co/cFkp2Qp/background2.png'),
           ),
         ),
@@ -123,3 +188,20 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
+
+
+
+
+
+
+/* const Expanded(
+                        child: DrawerHeader(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/6.png'),
+                              //fit: BoxFit.contain,
+                            ),
+                          ),
+                          child: Text(""),
+                        ),
+                      ), */
