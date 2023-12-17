@@ -40,6 +40,7 @@ class drawerItems extends StatelessWidget {
                 itemCount: users.length,
                 itemBuilder: (context, index) {
                   return ListTile(
+                    hoverColor: Colors.white,
                     title: Center(
                       child: Text(' ${users[index].name} ${users[index].surname}'),
                     ),

@@ -33,35 +33,33 @@ class _LoginPageState extends State<LoginPage> {
                 height: 240,
               ),
               Center(
-                child: Expanded(
-                  child: Container(
-                    width: 350,
-                    height: 410,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.white,
-                    ),
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 35),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image.asset('assets/login_banner.png'),
-                            ],
-                          ),
+                child: Container(
+                  width: 350,
+                  height: 410,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 35),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset('assets/login_banner.png'),
+                          ],
                         ),
-                        const userTextField(),
-                        const passwordTextField(),
-                        const loginpageButtonLogin(),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Divider(),
-                        const loginpageButtonForgetPass(),
-                      ],
-                    ),
+                      ),
+                      const userTextField(),
+                      const passwordTextField(),
+                      const loginpageButtonLogin(),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const Divider(),
+                      const loginpageButtonForgetPass(),
+                    ],
                   ),
                 ),
               ),
