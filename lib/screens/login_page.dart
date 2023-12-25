@@ -37,6 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                   width: 350,
                   height: 410,
                   //dikkat
+                  //asdfa
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.white,
