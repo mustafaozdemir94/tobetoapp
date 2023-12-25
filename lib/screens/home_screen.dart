@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Text(
                   "TOBETO'ya hoş geldin",
                   style: TextStyle(
-                    fontSize: 35,
+                    fontSize: 36,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
