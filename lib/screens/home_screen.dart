@@ -116,8 +116,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
               border: const Border(
                 left: BorderSide(
-                  color: Color(0xFF076B34), // Sol kenar rengi
-                  width: 10, // Sol kenar genişliği
+                  color: Color(0xFF076B34),
+                  width: 10,
                 ),
               ),
               color: Colors.white,
@@ -199,10 +199,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     end: Alignment.bottomRight),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black, // Gölge rengi ve şeffaflığı
-                    spreadRadius: 5, // Gölge yayılma miktarı
-                    blurRadius: 7, // Gölge bulanıklık miktarı
-                    offset: Offset(0, 3), // Gölge ofseti
+                    color: Colors.black,
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3),
                   ),
                 ],
                 color: Colors.blue,
@@ -246,10 +246,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     end: Alignment.bottomRight),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black, // Gölge rengi ve şeffaflığı
-                    spreadRadius: 5, // Gölge yayılma miktarı
-                    blurRadius: 7, // Gölge bulanıklık miktarı
-                    offset: Offset(0, 3), // Gölge ofseti
+                    color: Colors.black,
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3),
                   ),
                 ],
                 color: Colors.blue,
@@ -293,10 +293,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     end: Alignment.bottomRight),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black, // Gölge rengi ve şeffaflığı
-                    spreadRadius: 5, // Gölge yayılma miktarı
-                    blurRadius: 7, // Gölge bulanıklık miktarı
-                    offset: Offset(0, 3), // Gölge ofseti
+                    color: Colors.black,
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3),
                   ),
                 ],
                 color: Colors.blue,
