@@ -36,9 +36,11 @@ class _LoginPageState extends State<LoginPage> {
                 child: Container(
                   width: 350,
                   height: 410,
+                  //dikkat
+                  //asdfa
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(40),
+                    color: Colors.black,
                   ),
                   child: Column(
                     children: [
@@ -81,7 +83,8 @@ class loginpageButtonForgetPass extends StatelessWidget {
       onPressed: () {},
       child: Text(
         "Parolamı Unuttum",
-        style: GoogleFonts.quicksand(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blue),
+        style: GoogleFonts.quicksand(
+            fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blue),
       ),
     );
   }
@@ -101,7 +104,8 @@ class loginpageButtonLogin extends StatelessWidget {
         backgroundColor: buttonColor,
         shadowColor: Colors.greenAccent,
         elevation: 3,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32.0)),
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(32.0)),
         minimumSize: const Size(285, 40),
       ),
       onPressed: () {
@@ -139,7 +143,8 @@ class passwordTextField extends StatelessWidget {
             prefixIcon: const Icon(Icons.lock_outline),
             suffixIcon: const Icon(Icons.remove_red_eye_outlined),
             border: const OutlineInputBorder(),
-            labelStyle: GoogleFonts.quicksand(fontWeight: FontWeight.bold, color: Colors.black45),
+            labelStyle: GoogleFonts.quicksand(
+                fontWeight: FontWeight.bold, color: Colors.black45),
             labelText: 'Parola',
           ),
         ),
@@ -167,7 +172,8 @@ class userTextField extends StatelessWidget {
             ),
             prefixIcon: const Icon(Icons.person_2_outlined),
             border: const OutlineInputBorder(),
-            labelStyle: GoogleFonts.quicksand(fontWeight: FontWeight.bold, color: Colors.black45),
+            labelStyle: GoogleFonts.quicksand(
+                fontWeight: FontWeight.bold, color: Colors.black45),
             labelText: 'Kullanıcı Kodu',
           ),
         ),
