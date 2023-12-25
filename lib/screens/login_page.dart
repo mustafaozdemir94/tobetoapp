@@ -39,8 +39,8 @@ class _LoginPageState extends State<LoginPage> {
                   //dikkat
                   //asdfa
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(40),
+                    color: Colors.black,
                   ),
                   child: Column(
                     children: [
